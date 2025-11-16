@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensiones de Navegador Útiles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+        }
+        
+        .extensions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .extension-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .extension-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .extension-header {
+            padding: 15px 20px;
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .extension-header h2 {
+            font-size: 1.3rem;
+        }
+        
+        .extension-content {
+            padding: 20px;
+        }
+        
+        .extension-description {
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .extension-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2ecc71;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #27ae60;
+        }
+        
+        .btn-firefox {
+            background-color: #E66000;
+        }
+        
+        .btn-firefox:hover {
+            background-color: #C75000;
+        }
+        
+        .btn-chrome {
+            background-color: #4285F4;
+        }
+        
+        .btn-chrome:hover {
+            background-color: #3367D6;
+        }
+        
+        .browser-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 5px;
+            color: white;
+        }
+        
+        .firefox-badge {
+            background-color: #E66000;
+        }
+        
+        .chrome-badge {
+            background-color: #4285F4;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .extensions-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Extensiones de Navegador Útiles</h1>
+            <p class="subtitle">Mejora tu experiencia de navegación con estas herramientas</p>
+        </header>
+        
+        <main class="extensions-grid">
+            <!-- Ublock -->
+            <div class="extension-card">
+                <div class="extension-header">
+                    <h2>Ublock Origin</h2>
+                </div>
+                <div class="extension-content">
+                    <p class="extension-description">Un bloqueador de anuncios eficiente y ligero que protege tu privacidad y mejora la velocidad de carga.</p>
+                    <div class="extension-links">
+                        <a href="https://ublockorigin.com/" class="btn" target="_blank">Descargar Ublock Origin</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Infinite Scroll Blocker -->
+            <div class="extension-card">
+                <div class="extension-header">
+                    <h2>Infinite Scroll Blocker</h2>
+                </div>
+                <div class="extension-content">
+                    <p class="extension-description">Bloquea el desplazamiento infinito en sitios web para evitar la adicción y mejorar la productividad.</p>
+                    <div class="extension-links">
+                        <a href="https://chromewebstore.google.com/detail/infinite-scroll-blocker/pbpfkabjjkbnenfmpcnkpfiabplihndp?pli=1" class="btn btn-chrome" target="_blank">Descargar para Chrome</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Privacy Badger -->
+            <div class="extension-card">
+                <div class="extension-header">
+                    <h2>Privacy Badger</h2>
+                </div>
+                <div class="extension-content">
+                    <p class="extension-description">Extensión de la EFF que bloquea rastreadores invisibles y protege tu privacidad mientras navegas.</p>
+                    <div class="extension-links">
+                        <a href="https://privacybadger.org/" class="btn" target="_blank">Descargar Privacy Badger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- JavaScript Toggle -->
+            <div class="extension-card">
+                <div class="extension-header">
+                    <h2>JavaScript Toggle On and Off</h2>
+                </div>
+                <div class="extension-content">
+                    <p class="extension-description">Activa y desactiva fácilmente JavaScript para mejorar la seguridad y el rendimiento.</p>
+                    <div class="extension-links">
+                        <a href="https://addons.mozilla.org/en-US/firefox/addon/javascript-toggler/?utm_content=search&utm_medium=referral&utm_source=addons.mozilla.org" class="btn btn-firefox" target="_blank">Descargar para Firefox</a>
+                        <a href="https://chromewebstore.google.com/detail/javascript-toggle-on-and/cdcgbgnfhhdmdkallfmlachogpghifgf" class="btn btn-chrome" target="_blank">Descargar para Chrome</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Leechblock -->
+            <div class="extension-card">
+                <div class="extension-header">
+                    <h2>Leechblock NG</h2>
+                </div>
+                <div class="extension-content">
+                    <p class="extension-description">Bloquea sitios web que te distraen para mejorar tu productividad y concentración.</p>
+                    <div class="extension-links">
+                        <a href="https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/" class="btn btn-firefox" target="_blank">Descargar para Firefox</a>
+                        <a href="https://chromewebstore.google.com/detail/leechblock-ng/blaaajhemilngeeffpbfkdjjoefldkok" class="btn btn-chrome" target="_blank">Descargar para Chrome</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Diseñado para organizar tus extensiones de navegador favoritas</p>
+        </footer>
+    </div>
+</body>
+</html>
