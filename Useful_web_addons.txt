@@ -1,0 +1,5 @@
+++ Ublock
+--- url: https://ublockorigin.com/
+
+++ Infinite Scroll Blocker (Just for Chrome) 
+--- url: https://chromewebstore.google.com/detail/infinite-scroll-blocker/pbpfkabjjkbnenfmpcnkpfiabplihndp?pli=1
