@@ -6,3 +6,8 @@
 
 ++ Privacy Badger
 --- url: https://privacybadger.org/
+
+++ JavaScript Toggle On and Off
+--- url (firefox): https://addons.mozilla.org/en-US/firefox/addon/javascript-toggler/?utm_content=search&utm_medium=referral&utm_source=addons.mozilla.org
+
+--- url (chrome): https://chromewebstore.google.com/detail/javascript-toggle-on-and/cdcgbgnfhhdmdkallfmlachogpghifgf
