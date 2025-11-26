@@ -1,3 +1,6 @@
+++ Ruffle
+--- url: https://ruffle.rs/
+
 ++ Ublock
 --- url: https://ublockorigin.com/
 
